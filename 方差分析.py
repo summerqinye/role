@@ -27,17 +27,3 @@ model2 = ols('frequency~ C(strategy) + C(environment)+ C(strategy):C(environment
 anovat2 = anova_lm(model2)
 # print(model.summary())
 print(anovat2)
-
-import scipy.stats as stats
-
-# 假设我们有三个组别的数据
-group1 = [6, 7, 4, 5, 7]
-group2 = [3, 5, 8, 6, 7]
-group3 = [2, 5, 3, 4, 5]
-
-# 执行单因素方差分析
-f_statistic, p_value = stats.f_oneway(group1, group2, group3)
-
-# 输出 F 统计量和 p 值
-print("F 统计量:", f_statistic)
-print("p 值:", p_value)
