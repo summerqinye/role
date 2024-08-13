@@ -1,4 +1,4 @@
-# 绘制箱线图
+# Boxplot
 import sys
 sys.path.append("analysis")
 from functions import *
@@ -9,9 +9,9 @@ import matplotlib.image as mpimg
 from matplotlib.offsetbox import TextArea, DrawingArea, OffsetImage, AnnotationBbox
 
 if __name__ == "__main__":
-	res = readcsv("C:\\Users\\lenovo\\Desktop\\paper\\random.csv")
-	res1 = readcsv("C:\\Users\\lenovo\\Desktop\\paper\\aco.csv")
-	res2 = readcsv("C:\\Users\\lenovo\\Desktop\\paper\\dt.csv")
+	res = readcsv("C:\\Users\\lenovo\\Desktop\\paper\\opportunistic.csv")
+	res1 = readcsv("C:\\Users\\lenovo\\Desktop\\paper\\algorithmic.csv")
+	res2 = readcsv("C:\\Users\\lenovo\\Desktop\\paper\\collaborative.csv")
 
 	print(res[1])
 
