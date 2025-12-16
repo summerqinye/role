@@ -3,7 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
-df = pd.read_excel('C:\\Users\\lenovo\\Desktop\\paper\\方差分析.xlsx')
+# df = pd.read_excel('C:\\Users\\lenovo\\Desktop\\paper\\方差分析.xlsx')
+df = pd.read_excel('C:\\Users\\lenovo\\Desktop\\paper\\ANOVA.xlsx')
 from statsmodels.formula.api import ols
 from statsmodels.stats.anova import anova_lm
 
@@ -27,3 +28,4 @@ model2 = ols('frequency~ C(strategy) + C(environment)+ C(strategy):C(environment
 anovat2 = anova_lm(model2)
 # print(model.summary())
 print(anovat2)
+
